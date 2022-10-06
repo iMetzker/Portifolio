@@ -1,0 +1,147 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    background-color: #FEFEFEff;
+    font-family:'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    
+}
+
+/* Moldando o background */
+div.background{
+    position: absolute;
+    background-color: #F5F4F3ff;
+    width: 100vw;
+    height: 40vh;
+    top: 0;
+    right: 0;
+}
+
+
+/* Moldando o menu */
+
+.logo-intro{
+    display: flex;
+    width: 15%; 
+    height: 15%;
+    position: relative; 
+    cursor: pointer; 
+    background-color:  #F5F4F3ff;
+}
+
+header li, header a, header button{
+font-weight: 500;
+font-size: 3rem;
+color: black;
+text-decoration: none;
+position: relative;
+background-color: #F5F4F3ff;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+}
+
+.menu{
+    list-style: none;
+}
+
+.menu li{
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+.menu li a{
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.menu li a:hover{
+    font-weight: bold;
+    font-size: 2.7rem;
+}
+
+.botao-contato button{
+    padding: 3rem 5rem ;
+    border-radius: 1rem;
+    background-color: black;
+    color: #FEFEFEff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.botao-contato button:hover{
+    background-color: hsla(190, 82%, 68%, 0.8);
+    transition: all 0.3s ease-in 0s;
+}
+
+/* Descrição primeira tela */
+
+div.intro-name{
+    width: 26vw;
+    height: 20vh;
+    font-size: 4.5rem;
+    position: absolute;
+    top: 67%;
+    left: 38%;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+div.intro-name span{
+    font-size: 10rem;
+    position: relative;
+    font-weight: bold;
+    letter-spacing: 2rem;
+}
+
+/* Imagem foco primeira tela */
+
+.picture a img{
+    position: relative;
+    left: 38%;
+    width: 30vw;
+    height: 50%;
+    border-radius: 50%;
+    border: 0.3rem solid white;
+}
+
+/* Botão para descer a página */
+
+a.botao-baixo button img{
+    position: relative;
+    width: 15%;
+    height: 15%;
+}
+
+a.botao-baixo button{
+    border: none;
+    position: fixed;
+    left: 38%;
+    bottom: 3%;
+    cursor: pointer;
+        
+}
+
+/* Ícones para contato */
+
+a.redes-contato button img{
+    width: 15%;
+    height: 15%;
+}
+
+a.redes-contato button{
+    position: relative;
+    display: flex;
+    left: 2%;
+    margin-top: 2%;
+    cursor: pointer;
+    border: none;   
+    
+}
+
+
