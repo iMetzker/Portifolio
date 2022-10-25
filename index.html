@@ -6,55 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio | Ivny Metzker</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" type="image" href="assets/img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
-<!-- Background intro -->
-<div class="background"></div>
 
-<!-- Menu de navegação -->
-<header id="intro">
+<header class="menu">
+<div class="menu-content main-content">
 
-<img class="logo-intro" src="assets/img/logo.png" alt="logo do portifolio, clique para ir para a intro">
+    <h1><a href="#home-page"><img class="logo-intro" src="./assets/img/portifolio.png" alt="logo do portifolio"></a></h1>
+ 
+  <nav>
+     <ul>
+     <li><a href="#" rel="sobre-mim">Sobre Mim</a></li>
+     <li><a href="#" rel="habilidades">Habilidades</a></li>
+     <li><a href="#" rel="projetos">Projetos</a></li>
+     </ul>
+ </nav>
+ 
+    <a href="#"><button>Contato</button></a>
 
- <nav>
-    
-    <ul class="menu">
-    <li><a href="#" rel="sobre-mim">Sobre Mim</a></li>
-    <li><a href="#" rel="habilidades">Habilidades</a></li>
-    <li><a href="#" rel="projetos">Projetos</a></li>
-    </ul>
-
-</nav>
-
-<a class="botao-contato" href="#"><button>Contato</button></a>
-
-</header>
-
- <!-- Primeira tela  -->
- <div class="intro-name">
-        <p>
-            Ivny<br>
-            <span>Metzker.|</span> <br>
-            Desenvolvedora Full Stack           
-        </p>
 </div>
+</header>
+ 
+<!-- Página de apresentação introdutória -->
+<div class="spacing"></div>
+
+<div id="home-page" class="section-page">
+<div class="intro-content">
 
 <div class="picture">
-    <a href="#">
-        <img src="assets/img/developer.png">
-    </a>
+        <img src="./assets/img/intro.png" alt="ilustração de uma mulher de cabelo castanho, trabalhando em um notebook com programação, em cima um balão com ilustração de texto e imagem, na mesa uma xícara de ccafé rosa e um jarro de flores.">
 </div>
 
-<!-- Botão para descer a página -->
-<a class="botao-baixo" href="#header"><button><img class="botao-baixo" src="assets/img/botao-descer.png" alt="descer para próxima página"></button></a>
-
-<!-- Icones de contato da intro -->
-<div id="link-contato">
-<a class="redes-contato" href="#"><button><img src="assets/img/icon-linkedin.png" alt="link para git hub"></button></a>
-<a class="redes-contato" href="#"><button><img src="assets/img/icon-github.png" alt="link para linkedin"></button></a>
+<div class="home-content">
+    <p>
+    Ivny<br>
+    <span>Metzker. |</span> <br>
+    Desenvolvedora Full Stack           
+</p>
 </div>
 
+<div class="contact-icon">
+<a href="https://github.com/iMetzker" target="_blank"><img src="./assets/img/github.png" alt="Icone Github"></a>
+<a href="https://www.linkedin.com/in/ivny-metzker/" target="_blank"><img src="./assets/img/linkedin.png" alt="Icone Linkedin"></a>
+</div>
+
+</div>
+</div>
+ 
 </body>
 </html>

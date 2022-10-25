@@ -1,147 +1,162 @@
+:root{
+    --gray-color: #363C4Aff;
+    --larange-color: #fb8500;
+    --blue-color: #023047;
+    --white-color: #ebebeb;
+    --aqua-color: hsla(190, 82%, 68%, 0.8);
+    --gap: 3rem;
+}
 
 *{
     margin: 0;
     padding: 0;
-    font-size: 62.5%;
-    background-color: #FEFEFEff;
-    font-family:'Courier New', Courier, monospace;
     box-sizing: border-box;
-    
 }
 
-/* Moldando o background */
-div.background{
-    position: absolute;
-    background-color: #F5F4F3ff;
-    width: 100vw;
-    height: 40vh;
-    top: 0;
-    right: 0;
+html{
+    font-size: 62.5%;
 }
 
+body{
+    font-family:'Montserrat', sans-serif;
+    font-size: 2rem;
+}
 
-/* Moldando o menu */
+a{
+    text-decoration: none;
+}
+
+.section-page{
+    min-height: 100vh;
+}
+
+/* Estilizando o menu */
 
 .logo-intro{
-    display: flex;
-    width: 15%; 
-    height: 15%;
-    position: relative; 
-    cursor: pointer; 
-    background-color:  #F5F4F3ff;
-}
-
-header li, header a, header button{
-font-weight: 500;
-font-size: 3rem;
-color: black;
-text-decoration: none;
-position: relative;
-background-color: #F5F4F3ff;
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 5%;
+    margin-top: 1.5rem ;
+    width: 20rem;
+    height: 10rem;
 }
 
 .menu{
-    list-style: none;
-}
-
-.menu li{
-    display: inline-block;
-    padding: 0 2rem;
-}
-
-.menu li a{
-    transition: all 0.3s ease-in-out 0s;
-}
-
-.menu li a:hover{
-    font-weight: bold;
-    font-size: 2.7rem;
-}
-
-.botao-contato button{
-    padding: 3rem 5rem ;
-    border-radius: 1rem;
-    background-color: black;
-    color: #FEFEFEff;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-.botao-contato button:hover{
-    background-color: hsla(190, 82%, 68%, 0.8);
-    transition: all 0.3s ease-in 0s;
-}
-
-/* Descrição primeira tela */
-
-div.intro-name{
-    width: 26vw;
-    height: 20vh;
-    font-size: 4.5rem;
-    position: absolute;
-    top: 67%;
-    left: 38%;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-div.intro-name span{
-    font-size: 10rem;
-    position: relative;
-    font-weight: bold;
-    letter-spacing: 2rem;
-}
-
-/* Imagem foco primeira tela */
-
-.picture a img{
-    position: relative;
-    left: 38%;
-    width: 30vw;
-    height: 50%;
-    border-radius: 50%;
-    border: 0.3rem solid white;
-}
-
-/* Botão para descer a página */
-
-a.botao-baixo button img{
-    position: relative;
-    width: 15%;
-    height: 15%;
-}
-
-a.botao-baixo button{
-    border: none;
     position: fixed;
-    left: 38%;
-    bottom: 3%;
-    cursor: pointer;
-        
+    z-index: 1;
+    height: 11%;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--white-color);
 }
 
-/* Ícones para contato */
-
-a.redes-contato button img{
-    width: 15%;
-    height: 15%;
+.main-content{
+    height: 100%;
+    max-width: 120rem;
+    margin: 0 auto; 
+    padding: var(--gap);  
 }
 
-a.redes-contato button{
-    position: relative;
+.menu-content{
     display: flex;
-    left: 2%;
-    margin-top: 2%;
-    cursor: pointer;
-    border: none;   
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a{
+    color: black;
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    position: relative;
     
 }
 
+/* Adicionando um efeito de underline no menu */
+
+.menu ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background-color: var(--aqua-color);
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after{
+    width: 50%;
+    left: 25%;
+}
+
+button{
+    padding: 2rem 4rem;
+    background-color: black;
+    border: 0;
+    border-radius: 5%;
+    font-size: 1.8rem;
+    color: var(--white-color);
+    
+}
+
+button:hover{
+    background-color: var(--aqua-color);
+    transition: all 300ms ease-in-out;
+    color: black;
+}
+
+/* Criando um espaço para desconsiderar o menu fixo na tela */
+
+.spacing{
+height: 10.5rem;
+}
+
+/* Trabalhando com a descrição da primeira página */
+
+.intro-content{
+    transition: all 300ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.picture{
+    margin: 0 auto;
+}
+.picture img{
+    margin-top: 12rem;
+    border-radius: 50%;
+    max-width: 60rem;
+    height: auto;
+}
+
+.contact-icon{
+    display: flex;
+    flex-flow: column wrap;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.contact-icon img{
+    height: 10rem;
+    padding: 1rem;
+}
+
+.home-content span{
+    font-weight: bold;
+    font-size: 10rem;
+    letter-spacing: 2rem;
+    line-height: 7rem;
+
+
+}
 
