@@ -6,4 +6,4 @@ Status: WIP
 
 🎆 Nesse projeto estou criando meu primeiro portifólio utilizando apenas <strong>HTML e CSS</strong>
 
-✨ Visite: <a href="portifolio-ivnymetzker.netlify.app">Portifólio -Ivny Metzker</a>
+✨ Visite: <a href="https://portifolio-ivnymetzker.netlify.app/">Portifólio -Ivny Metzker</a>
