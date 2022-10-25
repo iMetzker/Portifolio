@@ -15,6 +15,7 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -46,7 +47,8 @@ a{
     left: 0;
     right: 0;
     width: 100%;
-    background-color: var(--white-color);
+    background-color: white;
+    border-bottom: 1px solid var(--white-color);
 }
 
 .main-content{
@@ -110,6 +112,7 @@ button:hover{
     background-color: var(--aqua-color);
     transition: all 300ms ease-in-out;
     color: black;
+    cursor: pointer;
 }
 
 /* Criando um espaço para desconsiderar o menu fixo na tela */
@@ -156,7 +159,56 @@ div.picture{
     font-size: 10rem;
     letter-spacing: 2rem;
     line-height: 7rem;
-
-
 }
+
+
+
+/* Estilizando a página 02 */
+
+
+.abaout{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--gap);
+    min-height: 100vh;
+    position: relative;
+    top: 4.1rem;
+}
+
+.text-content, .picture-aling{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.picture-aling img{
+    width: 90rem;
+    height: 59rem;
+    border-bottom: 0.9rem solid aqua;
+    transition: 0.5s;
+    
+}
+
+.picture-aling img:hover{
+border-bottom: 0.9rem solid var(--larange-color);
+transition: all 300ms ease-in-out;
+}
+
+.text-content h2{
+    font-size: 8rem;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+}
+
+.text-content p{
+    margin-bottom: 1rem;
+}
+
+/* Efeito foto segunda pagina */
+
+
+
+
 
