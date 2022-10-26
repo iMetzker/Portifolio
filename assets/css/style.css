@@ -181,7 +181,7 @@ div.picture{
     height: 59rem;
     transition: 0.5s;
     filter: brightness(86%);
-    border-bottom: 0.9rem solid var(--aqua-color);
+    border-left: 0.9rem solid var(--aqua-color);
 
     
 }
@@ -189,7 +189,7 @@ div.picture{
 .picture-aling img:hover{
 transition: all 500ms ease-in;
 filter: none;
-border-bottom: 0.9rem solid #613dc1;
+border-left: 0.9rem solid #613dc1;
 }
 
 
@@ -204,6 +204,11 @@ border-bottom: 0.9rem solid #613dc1;
     margin-bottom: 1rem;
 }
 
+/* Sumindo com a caixa do checkbox do menu mobile */
+.close-menu{
+    display: none;
+   }
+
 /* Estilizando a página 03 */
 
 .bg-black{
@@ -212,126 +217,10 @@ border-bottom: 0.9rem solid #613dc1;
     background-color: black;
 }
 
-/* Estilizando texto dentro da box */
-
-.skils-content{
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-}
-
-.skils-content h2{
-color: aqua;
-letter-spacing: 0.6rem;
-text-transform: uppercase;
-margin-bottom: 9rem;
-display: flex;
-justify-content: center;
-}
-
-.skils-content span{
-    color: aqua;
-    font-size: 2rem;   
-}
-
-.skils-content p{
-margin-bottom: 1rem;
-}
-
-.skils-card{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    overflow: hidden;
-    
-}
-
 .skils-text-content{
-    padding: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 25rem;
+    color: #ebebeb;
 }
 
-/* Estilizando icones denro da box */
-
-.icon-skils{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    margin-top: 25rem;
-    width: 5rem;
-}
-
-
-.skill-future{
-    margin-top: 47rem;
-}
-
-.skill-future img{
-    filter: brightness(10%);
-}
-
-
-/* Adicionando um efeito de lines na box de descrição */
-.skils-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: black;
-}
-.skils-card{
-    position: relative;
-    width: 550px;
-    height: 600px;
-    background-color: white;
-    transition: 0.5s;
-}
-
-.skils-card:hover{
-    width: 680px;
-    height: 610px;
-}
-
-.skils-card .skils-lines{
-    position: absolute;
-    inset: 0;
-    background-color: #252422;    
-    overflow: hidden;
-}
-
-.skils-card .skils-lines::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) ;
-    width: 1000px;
-    height: 200px;
-    background: linear-gradient(transparent, aqua, aqua, aqua, transparent);
-    animation: animate 4s linear infinite;
-}
-
-@keyframes animate{
-    0%{
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
-    100%{
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
-}
-
-.skils-card .skils-lines::after{
-    content:'';
-    position: absolute;
-    inset: 3px;
-    background: #191919;
-}
 
 @media (max-width:956px){
     .contact-icon{
@@ -365,4 +254,60 @@ margin-bottom: 1rem;
 .text-content h2{
     font-size: 3rem;
 }
+
+/* Menu mobile, pode ser feito com js tbm. para esse menu, iremos inserir um input do type checkbox no html */
+    .menu{
+        bottom: 0;
+        text-align: center;
+    }
+    .menu-content, .menu-content ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-content{
+        height: 100vh;
+    }
+
+    /* Para o menu não ficar aparecendo */
+    .menu{
+        display: none;
+        height: 100vh;
+    }
+
+    .close-menu{
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+    }
+
+    .close-menu-label::after{
+        content: '☰';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background-color: black;
+        color: var(--white-color);
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    /* Lógica para quando o checkbox estiver marcado o menu aparecer e desmarcado escondido: */
+
+    .close-menu:checked~.menu{
+        display: block;
+    }
+
+    /* Mudando o símbolo do menu */
+    .close-menu:checked~.close-menu-label::after{
+        content: '×';
+    }
 }

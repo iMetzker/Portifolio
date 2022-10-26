@@ -17,13 +17,17 @@
 
 <body>
 
+    <!-- input para menu mobile -->
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="Close Menu"></label>
+
 <header class="menu">
 <div class="menu-content main-content">
 
     <h1><a href="#home-page"><img class="logo-intro" src="./assets/img/portifolio.png" alt="logo do portifolio"></a></h1>
  
   <nav>
-     <ul>
+     <ul onclick="getElementById('close-menu').checked = false;">
      <li><a href="#sobre-mim" rel="sobre-mim">Sobre Mim</a></li>
      <li><a href="#habilidades" rel="habilidades">Habilidades</a></li>
      <li><a href="#projetos" rel="projetos">Projetos</a></li>
@@ -71,12 +75,13 @@
     </div>
   
     <div class="text-content">
+
         <h2>Sobre Mim</h2>
-        <p>Meu nome é Ivny Metzker e atualmente estou em transição de carreira. Recentemente, fui apresentada a programação, por um amigo, e me vi totalmente apaixonada e inspirada pela área, desde então decidi que irei dar o meu melhor para me tornar uma profissional da tecnologia.</p>
-            <p>Hoje foco em aprofundar meus estudos na área de front-end com ênfase em desenvolvimento para web.</p>
-        <p>Meu maior objetivo e me tornar uma desenvolvedora Full Stack no futuro. Pretendo iniciar minha faculdade de Engenharia de Software em 01/23, e até lá, me dedico em cursos para desenvolvedores.</p>
-        <p>Atualmente estudo pela Ûdemy as tecnologias de Java Script e Type Script e estou participando do Bootcamp Orange Tech do Banco Inter focado em tecnologias front-end.</p>
+        <p>Meu nome é Ivny Metzker e atualmente estou em transição de carreira em busca da minha primeira oportunidade. Recentemente, fui apresentada a programação, por um amigo, e me vi totalmente apaixonada e inspirada pela área, desde então decidi que irei dar o meu melhor para me tornar uma profissional da tecnologia.</p>
+        <p>Hoje foco em aprofundar meus estudos na área de front-end com ênfase em desenvolvimento para web.</p>
+        <p>Se você precisa de um junior com muita dedicação e empenho, que tal trabalharmos na mesma equipe? Faremos coisas incríveis!</p>
         <p><small>Teófilo Otoni - MG</small></p>
+
     </div>
 
 </div>
@@ -85,48 +90,21 @@
 
 <section id="habilidades" class="section-page bg-black">
 
-<div class="skils-container">
-        <div class="skils-card">
-        <div class="skils-lines"></div>
-        </div>
-    
-
     <div class="skils-content">
 
         <div class="skils-text-content">
 
             <h2>Habilidades</h2>
-            <p><span>Atualmente:</span> Escrevo nas tecnologias de HTML e CSS</p>
-            <p><span>Em curso:</span> Ûdemy - JavaScript e TypeScript</p>
-            <p><span>Projeção:</span> Cursar Engenharia de Software 01/23</p>
+            <p>Atualmente entendo e escrevo nas tecnologias de HTML e CSS e estou desenvolvendo e aprimorando minha linguagem de programação em Java Script</p>
+            <p>
+                Em curso: <span>Ûdemy - Java Script e Type Script do básico ao avançado</span>
+                          <span>Banco Inter - Bootcamp Orange Tech tecnologias para front-end e back-end</span>
+            </p>
 
-        </div>
-
-        <div class="icon-skils skill-up">
-        
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-                
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-
-        </div>
-
-        <div class="icon-skils skill-future">
-            
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-            
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-            
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
-            
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain-wordmark.svg" />
-            
 
         </div>
 
     </div>
-</div>
 
 </section>
 
