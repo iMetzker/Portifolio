@@ -113,9 +113,6 @@ button:hover{
     box-shadow: 0.1rem 0.1rem 1rem 0.1rem var(--aqua-color);
 }
 
-/* Criando um espaço para desconsiderar o menu fixo na tela */
-
-
 /* Trabalhando com a descrição da página 01 */
 
 .intro-content{
@@ -336,5 +333,36 @@ margin-bottom: 1rem;
     background: #191919;
 }
 
+@media (max-width:956px){
+    .contact-icon{
+        position: relative;
+        flex-direction: row;
+        top: 4rem;
+    }
 
+    .abaout{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 2rem;
+        margin-right: 2rem;
+}
 
+.picture-aling img{
+    height: auto;
+    width: 100vw;
+}
+
+.picture img{
+    width: 30rem;
+}
+
+.home-content span{
+    font-size: 3rem;
+}
+
+.text-content h2{
+    font-size: 3rem;
+}
+}
