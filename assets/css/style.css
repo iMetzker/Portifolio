@@ -153,129 +153,18 @@ div.picture{
     line-height: 7rem;
 }
 
-
-
-/* Estilizando a página 02 */
-
-
-.abaout{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: var(--gap);
-    min-height: 100vh;
-    position: relative;
-    top: 4.1rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
-}
-
-.text-content{
-    margin-bottom: 4rem;
-}
-.text-content, .picture-aling{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    
-}
-
-.picture-aling img{
-    width: 90rem;
-    height: 59rem;
-    transition: 0.5s;
-    filter: brightness(86%);
-    border-left: 0.9rem solid var(--aqua-color);
-
-    
-}
-
-.picture-aling img:hover{
-transition: all 500ms ease-in;
-filter: none;
-border-left: 0.9rem solid #613dc1;
-}
-
-
-.text-content h2{
-    font-size: 8rem;
-    letter-spacing: 1rem;
-    text-transform: uppercase;
-    margin-bottom: 5rem;
-}
-
-.text-content p{
-    margin-bottom: 1rem;
-}
-
 /* Sumindo com a caixa do checkbox do menu mobile */
 .close-menu{
     display: none;
    }
 
-/* Estilizando a página 03 */
+@media (max-width:1100px){
 
-.bg-black{
-    background-size: cover;
-    background-position: center center;
-    background-color: black;
+.contact-icon{
+        position: relative;
+        flex-direction: row;
+    }
 }
-
-.skills-text-content, .img-skill{
-    color: #ebebeb;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-}
-
-.skills-content{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: var(--gap);
-    min-height: 100vh;
-    position: relative;
-    top: 10rem;
-}
-
-.skills-text-content h2{
-    margin-bottom: 5rem;
-    font-size: 4rem;
-    color: aqua;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1rem;
-}
-
-.skills-text-content p{
-    margin-bottom: 3rem;
-    line-height: 1.1;
-}
-
-.img-skill img{
-    height: 15rem;
-    align-self: center;
-}
-
-.img-skill{
-    flex-direction: row;
-}
-
-.img-skills-up{
-    grid-column: span 2;
-}
-
-.img-skills-up img{
-    height: 10rem;
-    padding-bottom: 1rem;
-    filter: brightness(7%);    
-}
-
-.aling-skill-img img{
-    align-items: center;
-    margin-top: -16rem;
-}
-
-
-/* Mobile */
 
 @media (max-width:800px){
     .contact-icon{
@@ -284,29 +173,11 @@ border-left: 0.9rem solid #613dc1;
         top: 4rem;
     }
 
-    .abaout{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin-left: 2rem;
-        margin-right: 2rem;
-}
-
-.picture-aling img{
-    height: auto;
-    width: 100vw;
-}
-
 .picture img{
     width: 30rem;
 }
 
 .home-content span{
-    font-size: 3rem;
-}
-
-.text-content h2{
     font-size: 3rem;
 }
 
