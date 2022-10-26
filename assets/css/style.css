@@ -178,7 +178,9 @@ div.picture{
 }
 
 .home-content span{
-    font-size: 3rem;
+    font-size: 4rem;
+    line-height: 3rem;
+    letter-spacing: 1.3rem;
 }
 
 /* Menu mobile, pode ser feito com js tbm. para esse menu, iremos inserir um input do type checkbox no html */
