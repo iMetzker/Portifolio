@@ -169,6 +169,9 @@ div.picture{
     margin-right: 10rem;
 }
 
+.text-content{
+    margin-bottom: 4rem;
+}
 .text-content, .picture-aling{
     display: flex;
     flex-flow: column wrap;
@@ -217,12 +220,64 @@ border-left: 0.9rem solid #613dc1;
     background-color: black;
 }
 
-.skils-text-content{
+.skills-text-content, .img-skill{
     color: #ebebeb;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.skills-content{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--gap);
+    min-height: 100vh;
+    position: relative;
+    top: 10rem;
+}
+
+.skills-text-content h2{
+    margin-bottom: 5rem;
+    font-size: 4rem;
+    color: aqua;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1rem;
+}
+
+.skills-text-content p{
+    margin-bottom: 3rem;
+    line-height: 1.1;
+}
+
+.img-skill img{
+    height: 15rem;
+    align-self: center;
+}
+
+.img-skill{
+    flex-direction: row;
+}
+
+.img-skills-up{
+    grid-column: span 2;
+}
+
+.img-skills-up img{
+    height: 10rem;
+    padding-bottom: 1rem;
+    filter: brightness(7%);    
+}
+
+.aling-skill-img img{
+    align-items: center;
+    margin-top: -16rem;
 }
 
 
-@media (max-width:956px){
+/* Mobile */
+
+@media (max-width:800px){
     .contact-icon{
         position: relative;
         flex-direction: row;
