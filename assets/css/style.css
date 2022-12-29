@@ -285,33 +285,65 @@ margin-top: 15rem;
     grid-column-start: 2;
     grid-row-start: 3;
     margin: 0 auto;
-    margin-top: 17rem; 
+    margin-top: 9rem; 
     max-width: 60rem;
     
 }
 
 .about-align img{
-    width: 65rem;
+    width: 60rem;
+    height: 60rem;
+    box-shadow: .1px .1px  9px gray;
+}
+
+.align-img1 img{
+    margin-top: 13rem;
 }
 
 .align-img2 img{
-    margin-top: 15rem;
+    height: 68.2rem;
 }
+
+
 
 .about-efect{
     width: 100%;
-    height: 50rem;
+    height: 60rem;
     position: absolute;
     bottom: -120rem;
-    background-color: rgb(0, 0, 0); 
+    background-color: #EAEEF1; 
     z-index: -1;
-    
+}
+
+.about-efect img{
+display: flex;
+margin: 0 auto;
+width: 5rem;
+margin-top: 48rem;
 }
 
 .description-me p {
 margin-bottom: 1rem;
-color: white;
+font-size: 1.7rem;
 }
+
+.description-me button {
+    font-size: 1.4rem;
+    width: 60%;
+    padding: 1rem;
+    border: 1.6px solid black;
+    border-radius: .2rem;
+    color: black;
+    box-shadow: .1px .1px 2px black;
+    background-color: #EAEEF1;
+}
+
+.description-me button:hover {
+    border: 1.6px solid #f4a261;
+    background-color: #f4a261;
+}
+
+
 
 @media (max-width:1340px){
     .about-align img{
@@ -348,6 +380,100 @@ color: white;
         }
         }
 
+/* Pagina 03 */
 
+.icon-pg3 img{
+    width: 10rem;
+    margin-top: 3rem;
+}
 
+.content-skils {
+    max-width: 160rem;
+    margin: 0 auto;
+    padding: 13rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    min-height: 100vh;
+    position: relative;
+}
 
+.content-skils-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content-skils-text {
+    max-width: 40rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.content-skils-text h2{
+    font-size: 8rem;
+    font-weight: lighter;
+}
+
+.content-skils-text button {
+    width: 100%;
+    margin-top: 3rem;
+    border: 1.6px solid black;
+    border-radius: .2rem;
+    color: black;
+    box-shadow: .1px .1px 2px black;
+    background-color: white;
+}
+
+.content-skils-text button:hover {
+    background-color: #f4a261;
+    color: white;
+    border: 1.6px solid #f4a261;
+}
+
+.footer-skils {
+    grid-column: span 2;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.footer-skils hr{
+    height: .5rem;
+    background-color: black;
+    border-radius: 2rem;
+    margin: 2rem 0 2rem;
+}
+
+.footer-skils p {
+    font-size: 3rem;
+    margin: 0 auto;
+    max-width: 90rem;
+    justify-content: center;
+}
+
+.footer-skils button {
+    width: 20rem;
+    margin: 0 auto;
+    font-size: 3rem;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer-skils button p {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.footer-skils button:hover {
+    color: var(--aqua-color);
+    border: none;
+    box-shadow: none;
+    scale: 1.1;
+}
