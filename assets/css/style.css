@@ -485,11 +485,7 @@ font-size: 1.7rem;
     max-width: 160rem;
     margin: 0 auto;
     padding: 13rem;
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: var(--gap);
     min-height: 100vh;
-    position: relative;
 }
 
 .projetos-listagem h2 {
@@ -504,66 +500,71 @@ font-size: 1.7rem;
 
 .content-lista-projetos {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--gap);
     
 
 }
 
 .preview-projeto {
-    background-color: black;
-    width: 100%;
-    height: 50rem;
-    font-size: 1.6rem;
+    border-radius: 1rem;
+    border: .1rem solid black;
+    box-shadow: .1rem .1rem 2rem #212529;
+    width: 36rem;
+    height: 40rem;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
 
 .preview-projeto img {
-    width: 36rem;
-    height: 36rem;
+    width: 25rem;
+    height: 25rem;
     transition: all 300ms ease-in-out;
-    
+    padding: 1.5rem;
+    border-radius: 50%;  
 }
 
-.footer-projetos img{
-    width: 4rem;
-    height: 4rem;
+.preview-projeto img:hover {
+    border-radius: 2rem;
+    transition: all 300ms ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .footer-projetos {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 1rem;
+    margin: 1rem 0;
     gap: 1rem;
 }
 
 .footer-projetos a{
-    color: #EAEEF1;
+    color: black;
+    font-weight: bold;
 }
 
 .footer-projetos a:hover{
-    color: var(--aqua-color);
+    scale: 1.08;
+    transition: all 300ms ease-in-out;
+
 }
 
 .preview-projeto p {
-    color: #EAEEF1;
+    font-size: 3rem;
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 1rem;
     gap: 1rem;
 }
 
-.preview-projeto img.image-projetos{
-    padding: 1.5rem;
-    border-radius: 2rem;
+/* Gambiarra */
+.spacing {
+    height: 13rem;
 }
-
-.preview-projeto img.image-projetos:hover {
-    transform: scale(1.06);
-    cursor: pointer;
-}
-
-
-
