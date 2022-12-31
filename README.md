@@ -10,5 +10,5 @@
 
 ## 🖥️ Demonstração
 
-<img src="./assets/img/preview-portifolio.png" alt="Foto da desenvolvedora">
+<img src="./assets/img/preview-home.jpeg" alt="Foto da desenvolvedora">
  📎 Link da página: <a href="https://portifolio-ivnymetzker.netlify.app/">Portifólio - Ivny Metzker</a>
