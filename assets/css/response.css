@@ -1,0 +1,88 @@
+
+/* MENU MOBILE */
+
+.close-menu{
+    display: none;
+   }
+
+@media (max-width:1100px){
+
+.contact-icon{
+        position: relative;
+        flex-direction: row;
+    }
+}
+
+@media (max-width:800px){
+    .contact-icon{
+        position: relative;
+        flex-direction: row;
+        top: 4rem;
+    }
+
+.picture img{
+    width: 30rem;
+}
+
+.home-content span{
+    font-size: 4rem;
+    line-height: 3rem;
+    letter-spacing: 1.3rem;
+}
+
+/* Menu mobile, pode ser feito com js tbm. para esse menu, iremos inserir um input do type checkbox no html */
+    .menu{
+        bottom: 0;
+        text-align: center;
+    }
+    .menu-content, .menu-content ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-content{
+        height: 100vh;
+    }
+
+    /* Para o menu não ficar aparecendo */
+    .menu{
+        display: none;
+        height: 100vh;
+    }
+
+    .close-menu{
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+    }
+
+    .close-menu-label::after{
+        content: '☰';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background-color: black;
+        color: var(--white-color);
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    /* Lógica para quando o checkbox estiver marcado o menu aparecer e desmarcado escondido: */
+
+    .close-menu:checked~.menu{
+        display: block;
+    }
+
+    /* Mudando o símbolo do menu */
+    .close-menu:checked~.close-menu-label::after{
+        content: '×';
+    }
+}

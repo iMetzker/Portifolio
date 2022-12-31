@@ -27,15 +27,11 @@ a{
 .section-page{
     min-height: 100vh;
     margin: 0 auto;
+    padding: 10rem;
 }
 
 /* Estilizando o menu */
 
-.logo-intro{
-    margin-top: 1.5rem ;
-    width: 20rem;
-    height: 10rem;
-}
 
 .menu{
     position: fixed;
@@ -46,12 +42,10 @@ a{
     right: 0;
     width: 100%;
     background-color: white;
-    border-bottom: 1px solid var(--white-color);
 }
 
 .main-content{
     height: 100%;
-    max-width: 120rem;
     margin: 0 auto; 
     padding: var(--gap);  
 }
@@ -74,9 +68,20 @@ a{
     display: block;
     padding: 2rem;
     font-size: 1.8rem;
-    position: relative;
-    
+    position: relative; 
 }
+
+.menu-icons img{
+    width: 3.7rem;
+    margin: 0 1rem;
+    padding: .2rem;
+}
+
+.menu-icons img:hover{
+    transform: scale(1.2);
+    transition: all 300ms ease-in-out;
+}
+
 
 /* Adicionando um efeito de underline no menu */
 
@@ -87,7 +92,7 @@ a{
     left: 50%;
     width: 0;
     height: 0.2rem;
-    background-color: var(--aqua-color);
+    background-color: #000;
     transition: all 300ms ease-in-out;
 }
 
@@ -96,475 +101,349 @@ a{
     left: 25%;
 }
 
-button{
-    padding: 2rem 4rem;
-    background-color: black;
-    border: 0;
-    border-radius: 5%;
-    font-size: 1.8rem;
-    color: var(--white-color);
-    
-}
+/* 01 - HOME */
 
-button:hover{
-    background-color: rgba(0, 0, 0, 0.9);
-    transition: all 300ms ease-in-out;
-    color: var(--aqua-color);
-    cursor: pointer;
-    box-shadow: 0.1rem 0.1rem 1rem 0.1rem var(--aqua-color);
-}
-
-/* Trabalhando com a descrição da página 01 - Intro */
-
-.intro-content{
-    transition: all 300ms ease-in-out;
+.home-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-div.picture{
-    margin: 0 auto;
-}
-.picture img{
-    margin-top: 20rem;
-    border-radius: 50%;
-    max-width: 70rem;
-    height: auto;
+.picture-home img{
+    width: 70rem;
 }
 
-.contact-icon{
-    display: flex;
-    flex-flow: column wrap;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
-.contact-icon img{
-    height: 10rem;
-    padding: 1rem;
-}
-
-
-
-.home-content span{
-    font-weight: bold;
-    font-size: 10rem;
-    letter-spacing: 2rem;
-    line-height: 7rem;
-    margin-left: -.6rem;
-}
-
-/* Sumindo com a caixa do checkbox do menu mobile */
-.close-menu{
-    display: none;
-   }
-
-@media (max-width:1100px){
-
-.contact-icon{
-        position: relative;
-        flex-direction: row;
-    }
-}
-
-@media (max-width:800px){
-    .contact-icon{
-        position: relative;
-        flex-direction: row;
-        top: 4rem;
-    }
-
-.picture img{
-    width: 30rem;
-}
-
-.home-content span{
-    font-size: 4rem;
-    line-height: 3rem;
-    letter-spacing: 1.3rem;
-}
-
-/* Menu mobile, pode ser feito com js tbm. para esse menu, iremos inserir um input do type checkbox no html */
-    .menu{
-        bottom: 0;
-        text-align: center;
-    }
-    .menu-content, .menu-content ul{
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .menu-content{
-        height: 100vh;
-    }
-
-    /* Para o menu não ficar aparecendo */
-    .menu{
-        display: none;
-        height: 100vh;
-    }
-
-    .close-menu{
-        position: fixed;
-        z-index: 2;
-        top: 0;
-        left: 0;
-    }
-
-    .close-menu-label::after{
-        content: '☰';
-        position: fixed;
-        z-index: 2;
-        top: 2rem;
-        right: 2rem;
-        background-color: black;
-        color: var(--white-color);
-        font-size: 3rem;
-        line-height: 3rem;
-        width: 3rem;
-        height: 3rem;
-        text-align: center;
-        padding: 0.5rem;
-        cursor: pointer;
-        border-radius: 4px;
-    }
-
-    /* Lógica para quando o checkbox estiver marcado o menu aparecer e desmarcado escondido: */
-
-    .close-menu:checked~.menu{
-        display: block;
-    }
-
-    /* Mudando o símbolo do menu */
-    .close-menu:checked~.close-menu-label::after{
-        content: '×';
-    }
-}
-
-/* Trabalhando com a descrição da página 02 - Sobre mim*/
-
-#sobre-mim h2{
-display: flex;
-justify-content: left;
-font-size: 6rem;
-font-weight: lighter;
-margin-top: 15rem;
-}
-
-#sobre-mim h2 span{
-    font-weight: bold;
-    margin-right: 1rem;
-}
-
-.about-align {
-    max-width: 160rem;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 21% 35% 40%;
-}
-
-.about-align div:nth-child(1){
-    grid-column-start: 1;
-    grid-row-start: 1;
-    margin: 0 auto;
-}
-
-.about-align div:nth-child(2){
-    grid-row-start: 1;
-    grid-row-end: 3;
-    margin: 0 auto;
-}
-
-.about-align div:nth-child(3){
-    margin: 0 auto;
-}
-
-.about-align div:nth-child(4){
-    grid-column-start: 2;
-    grid-row-start: 3;
-    margin: 0 auto;
-    margin-top: 9rem; 
-    max-width: 60rem;
-    
-}
-
-.about-align img{
-    width: 60rem;
-    height: 60rem;
-    box-shadow: .1px .1px  9px gray;
-}
-
-.align-img1 img{
-    margin-top: 13rem;
-}
-
-.align-img2 img{
-    height: 68.2rem;
-}
-
-
-
-.about-efect{
-    width: 100%;
-    height: 60rem;
-    position: absolute;
-    bottom: -120rem;
-    background-color: #EAEEF1; 
-    z-index: -1;
-}
-
-.about-efect img{
-display: flex;
-margin: 0 auto;
-width: 5rem;
-margin-top: 48rem;
-}
-
-.description-me p {
-margin-bottom: 1rem;
-font-size: 1.7rem;
-}
-
-.description-me button {
-    font-size: 1.4rem;
-    width: 60%;
-    padding: 1rem;
-    border: 1.6px solid black;
-    border-radius: .2rem;
-    color: black;
-    box-shadow: .1px .1px 2px black;
-    background-color: #EAEEF1;
-}
-
-.description-me button:hover {
-    border: 1.6px solid #f4a261;
-    background-color: #f4a261;
-    color: white;
-    font-weight: bold;
-}
-
-
-
-@media (max-width:1340px){
-    .about-align img{
-        width: 50rem;
-    }
-    .about-efect{
-        bottom: -110rem;    
-    }
-    }
-
-    @media (max-width:1060px){
-        .about-align{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .about-align img{
-            padding: 3rem;
-        }
-        .align-img2 img{
-            margin-top: 3rem;
-        }
-        .about-efect{
-            background-color: white;   
-        }
-        .description-me p {
-            color: black;
-            margin-top: -14rem;
-            padding: 0 3rem ;
-            }
-        .description-me button {
-            margin-left: 3rem;
-        }
-        }
-
-/* Trabalhando com a descrição da página 03 - Habilidades */
-
-.icon-pg3 img{
-    width: 10rem;
-    margin-top: 3rem;
-}
-
-.content-skils {
-    max-width: 160rem;
-    margin: 0 auto;
-    padding: 13rem;
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: var(--gap);
-    min-height: 100vh;
-    position: relative;
-}
-
-.content-skils-icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.content-skils-text {
-    max-width: 49rem;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    margin: 0 auto;
-
-}
-
-.content-skils-text h2{
-    font-size: 8rem;
+.text-content h1{
+    font-size: 5rem;
     font-weight: lighter;
-    margin: 0 -1rem;
 }
 
-.content-skils-text button {
-    width: 100%;
-    margin-top: 3rem;
-    border: 1.6px solid black;
-    border-radius: .2rem;
-    color: black;
-    box-shadow: .1px .1px 2px black;
-    background-color: white;
-}
-
-.content-skils-text button:hover {
-    background-color: #f4a261;
-    color: white;
-    border: 1.6px solid #f4a261;
-}
-
-.footer-skils {
-    grid-column: span 2;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-}
-
-.footer-skils hr{
-    height: .5rem;
-    background-color: black;
-    border-radius: 2rem;
-    margin: 2rem 0 2rem;
-}
-
-.footer-skils a{
-    margin: 0 auto;
-}
-.footer-skils button {
-    width: 20rem;
-    margin: 0 auto;
+.text-content {
     font-size: 3rem;
-    background-color: white;
-    color: black;
-    font-weight: bold;
-    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.footer-skils button p {
+.home-more button {
+    margin-top: 3rem;
+    padding: 1.3rem 4rem;
     font-size: 1.5rem;
-    margin-top: 2rem;
-}
-
-.footer-skils button:hover {
-    color: var(--aqua-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    
     border: none;
-    box-shadow: none;
-    scale: 1.1;
+    background-color: #000;
+    color: #ebebeb;
+    border-radius: 5rem;
 }
 
-/* Trabalhando com a descrição da página 04 - Projetos */
-
-.content-projetos {
-    max-width: 160rem;
-    margin: 0 auto;
-    padding: 13rem;
-    min-height: 100vh;
+.home-more button:hover {
+    transition: all 300ms ease-in-out;
+    background-color: #D84F50;
+    cursor: pointer;
 }
 
-.projetos-listagem h2 {
-    font-size: 4rem;
-    font-weight: lighter;
+.ball-effect {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.ball {
+    margin: 1rem;
+    background-color: #000;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    animation: loading 1s infinite;
+    animation-delay: calc(1.2s * var(--i));
+    transition: all 300ms ease-in-out;
+}
+
+/* Animação ball */
+
+@keyframes loading {
+    0% {
+        transform: scale(1.3);
+    }
+    
+    80%, 100%{
+        transform: scale(0.5);
+    }
+}
+
+/* 02 - ABOUT */
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-bottom: 0;
+    position: relative;
+    bottom: -10.5rem;
+    gap: var(--gap);
+}
+
+#about .text-content h2 {
+    align-self: flex-start;
+    margin-bottom: 5rem;
+}
+
+#about .text-content h2 span{
+font-weight: lighter;
+}
+
+#about .text-content p{
     margin-bottom: 3rem;
 }
 
-.projetos-listagem h2 span {
+.redirect-icons img {
+    width: 15rem;
+    height: 15rem;
+}
+
+.redirect-icons {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.text-content a{
+    color: #000;
+}
+
+.text-content a:hover{
+    color: #3286AE;
     font-weight: bold;
 }
 
-.content-lista-projetos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--gap);
-    
-
+.redirect-icons a span{
+    font-weight: bold;
 }
 
-.preview-projeto {
-    border-radius: 1rem;
-    border: .1rem solid black;
-    box-shadow: .1rem .1rem 2rem #212529;
-    width: 36rem;
-    height: 40rem;
-    font-size: 1.5rem;
-    letter-spacing: .1rem;
+.redirect-icons-align {
+    display: flex;
+}
+
+.redirect-icons-align a{
+    max-width: 20rem;
+    padding: 1rem;
+}
+
+/* 03 - SKILLS */
+
+.bg-gray {
+    background-color: #e5e5e5;
+}
+
+.skills-icons {
     display: flex;
     flex-direction: column;
+    gap: var(--gap);
+
+    position: absolute;
+    right: 5rem;
+}
+
+.skills-icons img {
+    width: 7rem;
+    height: 7rem;
+    padding: 1rem;
+}
+
+.skills-content h2 {
+    padding: 6rem 0;
+}
+
+.skills-content .text-content {
+    max-width: 70rem;
+    position: absolute;
+
+    background-color: white;
+    border-radius: 3rem;
+    padding: 5rem;
+    padding-top: 13rem;
+    left: 9rem;
+}
+
+
+.details-skills-text {
+    background-color: #2F3133;
+    width: 100%;
+    height: 10rem;
+
+    position: absolute;
+    top: 0;
+    border-radius: 3rem  3rem 0 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.text-balls {
+    background-color: white;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.details-skills-text-balls {
+    display: flex;
+    padding: 0 3rem ;
+    gap: 3rem;
+}
+
+.skills-picture{
+position: absolute;
+bottom: -198rem;
+left: 40rem;
+}
+
+.skills-picture img{
+    width: 90%;
+}
+
+.skills-icons-box {
+    width: 10rem;
+    height: 10rem;
+    background-color: #000;
+
+    display: flex;
     justify-content: center;
     align-items: center;
-    
+    flex-direction: column;
+
+    border-radius: 1rem;
 }
 
-.preview-projeto img {
-    width: 25rem;
-    height: 25rem;
-    transition: all 300ms ease-in-out;
-    padding: 1.5rem;
-    border-radius: 50%;  
-}
-
-.preview-projeto img:hover {
-    border-radius: 2rem;
-    transition: all 300ms ease-in-out;
-    transform: scale(1.1);
+.bg-js:hover {
+    background-color: #F2BF26;
     cursor: pointer;
-}
-
-.footer-projetos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0;
-    gap: 1rem;
-}
-
-.footer-projetos a{
-    color: black;
-    font-weight: bold;
-}
-
-.footer-projetos a:hover{
-    scale: 1.08;
     transition: all 300ms ease-in-out;
 
 }
 
-.preview-projeto p {
-    font-size: 3rem;
+.bg-css:hover {
+    background-color: #0C73B8;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.bg-html:hover {
+    background-color: #E65127;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.bg-react:hover {
+    background-color: #48cae4;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.skills-icons-box p {
+    font-size: 1rem;
     font-weight: bold;
+    color: white;
+}
+
+/* 04 - PROJECTS */
+
+#projects h2{
+ padding: 4rem 0;
+}
+
+.projects-content {
+    display: flex;
+    align-items: left;
+    padding: 1rem 0;
+}
+
+.projects-preview {
+    width: 22rem;
+    height: 22rem;
+}
+
+.projects-preview img {
+    width: 100%;
+    height: 100%;
+    border: .2rem solid #000;
+}
+
+.projects-preview img:hover{
+    transform: scale(1.05);
+    transition: all 300ms ease-in-out;
+}
+
+.projects-about {
+    padding: 2rem;
+    max-width: 60rem;
+}
+
+.projects-about h3 {
+    margin-bottom: 4rem;
+}
+
+.projects-about p {
+    margin-bottom: 1rem;
+}
+
+.projects-about a {
+    font-weight: bold;
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.projects-about a:hover{
+    color: #3286AE;
+    transition: all 300ms ease-in-out;
+    letter-spacing: .2rem;
+}
+
+
+footer {
+    text-align: center;
+    font-size: 1.6rem;
+
+    background-color: #000;
+}
+
+footer img {
+    width: 4rem;
+    margin-right: 1rem;
+}
+
+footer a {
+    color: #e5e5e5;
+}
+
+footer a:hover {
+    text-transform: uppercase; 
+}
+
+footer span{
+ color: red;
+   }
+
+footer p {
+padding: 3rem;
+margin: 0;
+}
+
+.footer-contact {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: var(--gap);
+    padding-bottom: 4rem;
 }
 
-/* Gambiarra */
-.spacing {
-    height: 13rem;
+.footer-contact a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

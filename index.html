@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio | Ivny Metzker</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/response.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
-    <link rel="icon" href="./assets/img/icone.png">
+    <link rel="icon" href="./assets/img/icon.png">
 </head>
 
 <body>
@@ -22,170 +23,191 @@
     <label class="close-menu-label" for="close-menu" title="Close Menu"></label>
 
 <header class="menu">
-<div class="menu-content main-content">
 
-    <h1><a href="#home-page"><img class="logo-intro" src="./assets/img/portifolio.png" alt="logo do portifolio"></a></h1>
+    <div class="menu-content main-content">
  
-  <nav>
-     <ul onclick="getElementById('close-menu').checked = false;">
-     <li><a href="#sobre-mim" rel="sobre-mim">Sobre Mim</a></li>
-     <li><a href="#habilidades" rel="habilidades">Habilidades</a></li>
-     <li><a href="#projetos" rel="projetos">Projetos</a></li>
-     </ul>
- </nav>
+        <nav>
+            <ul onclick="getElementById('close-menu').checked = false;">
+            <li><a href="#home" rel="sobre-mim">Home</a></li>
+            <li><a href="#about" rel="sobre-mim">Sobre Mim</a></li>
+            <li><a href="#skills" rel="habilidades">Habilidades</a></li>
+            <li><a href="#projects" rel="projetos">Projetos</a></li>
+            </ul>
+        </nav>
  
-    <a href="#contact"><button>Contato</button></a>
+        <div class="menu-icons">
+            <a href="#"><img src="./assets/img/pdf.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/ivny-metzker/" target="_blank"><img src="./assets/img/linkedin.png" alt=""></a>
+            <a href="https://github.com/iMetzker" target="_blank"><img src="./assets/img/github.png" alt=""></a>
+        </div>
 
-</div>
+    </div>
 </header>
  
-<!-- Página 01 -->
 
-<div id="home-page" class="section-page">
-<div class="intro-content">
-
-<div class="picture">
-        <img src="./assets/img/intro.png" alt="ilustração de uma mulher de cabelo castanho, trabalhando em um notebook com programação, em cima um balão com ilustração de texto e imagem, na mesa uma xícara de café rosa e um jarro de flores.">
-</div>
+<section id="home" class="section-page">
 
 <div class="home-content">
-<p>
-    Ivny<br>
-    <span>Metzker</span> <br>
-    Desenvolvedora Front-End           
-</p>
-</div>
 
-<div class="contact-icon">
-<a href="https://github.com/iMetzker" target="_blank"><img src="./assets/img/github.png" alt="Icone Github"></a>
-<a href="https://www.linkedin.com/in/ivny-metzker/" target="_blank"><img src="./assets/img/linkedin.png" alt="Icone Linkedin"></a>
-</div>
-
-</div>
-</div>
-
-<!-- Página 02 em desenvolvimento -->
-
-<section id="sobre-mim" class="section-page">
-
-<div class="about-align">
+    <div class="picture-home">
+        <img src="./assets/img/home-picture.png" alt="">
+    </div>
+    <div class="text-content">
+        <h1>Olá! Me chamo Ivny Metzker,</h1>
+        <p>sou desenvolvedora front-end.</p>
+    </div>
+    <div class="home-more">
+        <a href="#about"><button>saber mais</button></a>
+    </div>
+    <div class="ball-effect">
+        <div class="ball" style="--i:1;"></div>
+        <div class="ball" style="--i:2;"></div>
+        <div class="ball" style="--i:3;"></div>
+    </div>
     
-    <div>
-    <h2><span>Sobre</span> Mim</h2>
-    </div>
-
-    <div class="align-img1">
-        <img src="https://s1.1zoom.me/big0/476/Mariana_Cute_Smile_Glance_Gray_background_591993_1280x853.jpg">
-    </div>
-
-    <div class="align-img2">
-        <img src="https://img.freepik.com/fotos-gratis/foto-plana-de-mesa-de-escritorio-com-fundo-de-espaco-de-copia-para-laptop_1150-45597.jpg?w=2000" alt="Foto da desenvolvedora">
-    </div>
-
-    <div class="description-me">
-        <p>
-        Olá! me chamo Ivny Metzker, sou de Teófilo Otoni - MG, tenho 26 anos e em breve serei formada em Engenharia de Software pela instituição de ensino UNOPAR.
-        </p>
-        <p>
-        Sou apaixonada por tecnologia e principalmente pela área de desenvolvimento web, hoje tenho o sonho de conquistar minha primeira oportunidade como estagiária.
-        </p>
-        <a href="#habilidades"><button>Conhecer Habilidades</button></a>    
-    </div>
-
 </div>
-
-<div class="about-efect"></div>
 
 </section>
 
-<section id="habilidades" class="section-page">
+<section id="about" class="section-page">
 
-    <div class="content-skils">
-        <div class="content-skils-icons">
-            <img src="./assets/img/ilustra-pag3.png" alt="">
+<div class="about-content">
 
-            <div class="icon-pg3">
-            <img src="./assets/img/css.png" alt="">
-            <img src="./assets/img/git.png" alt="">
-            <img src="./assets/img/html.png" alt="">
-            <img src="./assets/img/js.png" alt="">
-            <img src="https://cdn-icons-png.flaticon.com/512/7690/7690119.png" alt="">
-            </div>
-        </div>
-
-        <div class="content-skils-text">
-            <h2>Habilidades</h2>
-            <p2>
-                Possuo conhecimento nas tecnologias HTML5, CSS3, JavaScript, React e versionamento com Git e GitHub.
-                Atualmente estou me dedicando aos estudos em JavaScript.              
-                 
-            </p2>
-            <a href="#contact"><button>Entrar em contato</button></a>
-        </div>
-
-        <div class="footer-skils">
-            <hr>
-            <a href="#projetos"><button type="button">↓<p>Ver Projetos</p></button></a>
-        </div>
-
+    <div class="about-picture">
+        <img src="./assets/img/picture-me.png" alt="">
     </div>
 
-<section id="projetos" class="section-page">
-<div class="spacing"></div>
+    <div class="text-content">
+        <h2>/ Sobre <span>Mim</span></h2>
+        <p>Olá! me chamo Ivny Metzker, sou de Teófilo Otoni - MG, tenho 26 anos e em breve serei formada em Engenharia de Software pela instituição de ensino <a href="https://www.unopar.com.br/nossocurso/engenharia-de-software-bacharelado/" target="_blank">UNOPAR</a>.</p>
 
-<div class="content-projetos">
+        <p>Sou apaixonada por tecnologia e principalmente pela área de desenvolvimento web, hoje tenho o sonho de conquistar minha primeira oportunidade como estagiária.</p>
 
-    <div class="projetos-listagem">
-        <h2>Projetos <span>Principais</span></h2>
+        <div class="redirect-icons">
+
+            <div class="redirect-icons-align">
+                <img src="./assets/img/icon-habilidades.png" alt="">
+                <a href="#skills"><span>Conhecer</span> Habilidades</a>
+            </div>
+              
+            <div class="redirect-icons-align">
+                <img src="./assets/img/icon-projetos.png" alt="">
+                <a href="#projects"><span>Conhecer</span> Projetos</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</section>
+
+<section id="skills" class="section-page bg-gray">
+
+    <div class="skills-content">
+        <h2>/ Habilidades</h2>
         
-        <div class="content-lista-projetos">
-            
-            <div class="preview-projeto">
-                
-                <p>Pokedex</p>
-                <a href="https://pokedex-imetzker.netlify.app/"><img src="./assets/img/preview-pokedex.png" alt=""></a>
-
-                <div class="footer-projetos">
-                <a href="https://github.com/iMetzker/Pokedex" target="_blank" rel="noopener noreferrer">Visitar repositório ➭</a>
-                </div>
-            </div>
-
-            <div class="preview-projeto">
-                
-                <p>Calculadora</p>
-                <a href="https://pokedex-imetzker.netlify.app/"><img src="./assets/img/preview-calculadora.png" alt=""></a>
-
-                <div class="footer-projetos">
-                <a href="https://github.com/iMetzker/Pokedex" target="_blank" rel="noopener noreferrer">Visitar repositório ➭</a>
-                </div>
-            </div>
-
-            <div class="preview-projeto">
-                
-                <p>Pokedex</p>
-                <a href="https://pokedex-imetzker.netlify.app/"><img src="./assets/img/preview-pokedex.png" alt=""></a>
-
-                <div class="footer-projetos">
-                <a href="https://github.com/iMetzker/Pokedex" target="_blank" rel="noopener noreferrer">Visitar repositório ➭</a>
-                </div>
-
-            </div>
-            
+        <div class="skills-picture">
+            <img src="./assets/img/bg-skills.png" alt="">
         </div>
 
+        <div class="text-content">
 
+            <div class="details-skills-text">
+                <div class="details-skills-text-balls">
+                    <div class="text-balls"></div>
+                    <div class="text-balls"></div>
+                    <div class="text-balls"></div>
+                </div>
+            </div>
+
+            <p>Possuo conhecimento nas tecnologias HTML5, CSS3, JavaScript, React e versionamento com Git e GitHub. Atualmente estou me dedicando aos estudos em JavaScript.</p>
+
+        </div>
+
+        <div class="skills-icons">
+            <div class="skills-icons-box bg-js">
+                <img src="./assets/img/js-icon.png" alt="">
+                <p>Java Script</p>
+            </div>
+            <div class="skills-icons-box bg-css">
+                <img src="./assets/img/css-icon.png" alt="">
+                <p>Css 3</p>
+            </div>
+            <div class="skills-icons-box bg-html">
+                <img src="./assets/img/html-icon.png" alt="">
+                <p>Html 5</p>
+            </div>
+            <div class="skills-icons-box bg-react">
+                <img src="./assets/img/react-icon.png" alt="">
+                <p>React</p>
+            </div>
+                    
+            
+        </div>
     </div>
 
+</section>
 
-</div>
+<section id="projects" class="section-page">
+    <h2>/ Projetos</h2>
+
+    <div class="projects-content">
+        
+        <div class="projects-preview">
+            <a href="https://pokedex-imetzker.netlify.app/" target="_blank"><img src="./assets/img/preview-pokedex.png" alt=""></a>
+        </div>
+        
+        <div class="projects-about">
+            <h3>01 - Pokedex</h3>
+            <p>Digital Innovation One - Bootcamp Orange Tech +</p>
+            <p>O Projeto consiste na criação de uma listagem de pokémons consumindo uma API REST</p>
+            <a href="https://github.com/iMetzker/Pokedex" target="_blank">🔗 Visitar Repoistório</a>
+        </div>
+            
+    </div>
+
+    <div class="projects-content">
+        
+        <div class="projects-preview">
+            <a href="https://calcimetzker.netlify.app/" target="_blank"><img src="./assets/img/preview-calculadora.png" alt=""></a>
+        </div>
+        
+        <div class="projects-about">
+            <h3>02 - Calculadora</h3>
+            <p>Digital Innovation One - Bootcamp Orange Tech +</p>
+            <p>O projeto consiste na criação de uma calculadora de operações simples</p>
+            <a href="https://github.com/iMetzker/calculadora" target="_blank">🔗 Visitar Repoistório</a>
+        </div>
+            
+    </div>
+
+    <div class="projects-content">
+        
+        <div class="projects-preview">
+            <a href="https://site-dioimetzker.netlify.app/" target="_blank"><img src="./assets/img/preview-siteDio.png" alt=""></a>
+        </div>
+        
+        <div class="projects-about">
+            <h3>03 - Site</h3>
+            <p>Digital Innovation One - Bootcamp Orange Tech +</p>
+            <p>O projeto consiste na replicação do site da DIO</p>
+            <a href="https://github.com/iMetzker/Bootcamp_DIO/tree/main/Desafios/clone-page-dio" target="_blank">🔗 Visitar Repoistório</a>
+        </div>
+            
+    </div>
 
 </section>
 
-<section id="contact" class="section-page">
+<footer>
+    <p><a href="#home">Feito com <span>♥</span> por iMetzker</a></p>
 
+        <div class="footer-contact">
+            <a href="#"><img src="./assets/img/pdf-footer.png" alt="">Baixe o meu currículo em PDF</a>
+            <a href="https://www.linkedin.com/in/ivny-metzker/" target="_blank"><img src="./assets/img/linkedin-footer.png" alt="">Entre em contato comigo</a>
+            <a href="https://github.com/iMetzker" target="_blank"><img src="./assets/img/github-footer.png" alt="">Visite o meu repositório no Github</a>
 
-</section>
+        </div>  
+</footer>
 
- 
 </body>
 </html>
