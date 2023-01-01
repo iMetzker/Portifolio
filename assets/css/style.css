@@ -207,7 +207,6 @@ font-weight: lighter;
     margin-top: 10rem;
     display: flex;
     justify-content: center;
-    justify-content: center;
     gap: 10rem;
 }
 
@@ -408,42 +407,8 @@ left: 40rem;
 footer {
     text-align: center;
     font-size: 1.6rem;
+    background-color: black;
 
-    background-color: #000;
-}
-
-footer img {
-    width: 4rem;
-    margin-right: 1rem;
-}
-
-footer a {
     color: #e5e5e5;
-}
-
-footer a:hover {
-    text-transform: uppercase; 
-}
-
-footer span{
- color: red;
-   }
-
-footer p {
-padding: 3rem;
-margin: 0;
-}
-
-.footer-contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--gap);
-    padding-bottom: 4rem;
-}
-
-.footer-contact a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 5rem;
 }
