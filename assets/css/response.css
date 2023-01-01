@@ -170,6 +170,8 @@
     .skills-icons {
         position: relative;
         align-items: center;
+        justify-content: center;
+        right: 0;
         margin-top: 7rem;
         flex-direction: row;
     }
