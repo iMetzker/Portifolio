@@ -242,7 +242,6 @@ font-weight: lighter;
     display: flex;
     flex-direction: column;
     gap: var(--gap);
-
     position: absolute;
     right: 5rem;
 }
