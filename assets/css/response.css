@@ -30,6 +30,15 @@
     letter-spacing: 1.3rem;
 }
 
+.projects-content {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-page{
+    padding: 3rem;
+}
+
 /* Menu mobile, pode ser feito com js tbm. para esse menu, iremos inserir um input do type checkbox no html */
     .menu{
         bottom: 0;
@@ -130,7 +139,7 @@
     }
 }
     
-@media (max-width:920px) {
+@media (max-width:933px) {
     .picture-home img{
         max-width: 100vw;
         padding: 2rem;
@@ -147,6 +156,11 @@
 
     .redirect-icons{
         flex-direction: column;
+    }
+
+    .about-content {
+        bottom: -5rem;
+        
     }
 
     .about-picture img {
@@ -185,3 +199,9 @@
         height: 2rem;
     }
 }
+
+@media (max-width:450px) {
+    .skills-icons {
+        flex-direction: column;
+    }
+    }

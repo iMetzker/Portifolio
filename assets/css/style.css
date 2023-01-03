@@ -357,19 +357,17 @@ left: 40rem;
 
 .projects-content {
     display: flex;
-    align-items: left;
+    align-items: center;
+    justify-content: left;
     padding: 1rem 0;
 }
 
-.projects-preview {
-    width: 22rem;
-    height: 22rem;
-}
-
 .projects-preview img {
-    width: 100%;
-    height: 100%;
-    border: .2rem solid #000;
+    border-radius: 1rem;
+    
+    width: 30rem;
+    height: 30rem;
+
 }
 
 .projects-preview img:hover{
@@ -399,7 +397,7 @@ left: 40rem;
 .projects-about a:hover{
     color: #3286AE;
     transition: all 300ms ease-in-out;
-    letter-spacing: .2rem;
+    letter-spacing: .1rem;
 }
 
 
