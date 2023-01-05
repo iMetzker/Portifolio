@@ -27,5 +27,4 @@ WIP - Work In Progress
 
 <p>
 Desenvolvido por: <a href="https://github.com/iMetzker">Ivny Metzker</a> <br>
-Designer Gráfico: <a href="https://www.instagram.com/cristiano_leh/">Cristiano Lehmann</a>
 </p>
