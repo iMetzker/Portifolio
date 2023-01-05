@@ -368,12 +368,10 @@ left: 40rem;
     width: 30rem;
     height: 30rem;
 
+    cursor: auto;
+
 }
 
-.projects-preview img:hover{
-    transform: scale(1.05);
-    transition: all 300ms ease-in-out;
-}
 
 .projects-about {
     padding: 2rem;
@@ -394,11 +392,17 @@ left: 40rem;
     font-size: 1.5rem;
 }
 
-.projects-about a:hover{
-    color: #3286AE;
-    transition: all 300ms ease-in-out;
-    letter-spacing: .1rem;
+.icon-redirect-projects img{
+    width: 3rem;
+    margin-right: 1rem;
 }
+
+.icon-redirect-projects img:hover{
+    opacity: 50%;
+    transition: all 300ms ease-in-out;
+}
+
+
 
 
 footer {
