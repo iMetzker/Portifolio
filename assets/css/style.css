@@ -219,7 +219,7 @@
 
   h3 {
     font-size: 4rem;
-    margin-top: -1.2rem;
+    margin-top: -1rem;
   }
 
   .text-content p{
@@ -265,7 +265,6 @@
     justify-content: start;
     align-items: center;
     gap: var(--gap);
-    padding-top: 4rem;
   }
 
   .redirect-pages-content {
@@ -282,7 +281,25 @@
     font-weight: bold;
   }
 
-  /* TESTE IMG GAMBIARRA */
+  .cv {
+    padding: 4rem 0;
+  }
+  .cv a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding: 1.5rem 3rem;
+    border: none;
+    border-radius: 3rem;
+    background-image: linear-gradient(to right, #73def3, #48cae4, #22bbda);
+    cursor: pointer;
+  }
+
+  .cv a:hover {
+    background-image: linear-gradient(to right, rgb(255, 170, 186), #ff8fa3, #ff708a);
+    transition: all 300ms ease-in-out;
+  }
+
   .about-picture {
     max-width: 70rem;
   }
@@ -290,62 +307,73 @@
   .about-picture img {
     width: 100%;
   }
-  /* FIM GAMBIARRA*/
 
-  
   /* 03 - SKILLS */
   
+  .section-start {
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  }
+
+  .card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+  gap: var(--gap);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  }
+
+  
+  .effect {
+    font-size: 6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+    color: #e5e5e5;
+    position: absolute;
+    transform: translateY(5rem);
+    transition: .5s;
+    opacity: 0;
+  }
+
+  .react {
+    font-size: 6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+    color: #e5e5e5;
+    position: absolute;
+    opacity: 20%;
+  }
+
+  .card {
+    position: relative;
+    width: 40rem;
+    height: 20rem;
+    background-color: #2f3133;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 2rem;
+    box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, .5);
+    overflow: hidden;
+  }
+
+  .card:hover .effect {
+    transform: translateY(0);
+    opacity: 1;
+  }
   
   /* 04 - PROJECTS */
   
-  #projects h2 {
-    padding: 4rem 0;
-  }
   
-  .projects-content {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    padding: 1rem 0;
-  }
-  
-  .projects-preview img {
-    border-radius: 1rem;
-  
-    width: 30rem;
-    height: 30rem;
-  
-    cursor: auto;
-  }
-  
-  .projects-about {
-    padding: 2rem;
-    max-width: 60rem;
-  }
-  
-  .projects-about h3 {
-    margin-bottom: 4rem;
-  }
-  
-  .projects-about p {
-    margin-bottom: 1rem;
-  }
-  
-  .projects-about a {
-    font-weight: bold;
-    color: #000;
-    font-size: 1.5rem;
-  }
-  
-  .icon-redirect-projects img {
-    width: 3rem;
-    margin-right: 1rem;
-  }
-  
-  .icon-redirect-projects img:hover {
-    opacity: 50%;
-    transition: all 300ms ease-in-out;
-  }
   
   footer {
     text-align: center;
