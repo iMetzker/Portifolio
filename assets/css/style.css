@@ -27,7 +27,10 @@
   .section-page {
     min-height: 100vh;
     margin: 0 auto;
-    padding: 5rem;
+    padding: 10rem;
+    color: #2f3133;
+    display: flex;
+    align-items: center;
   }
   
   /* MENU */
@@ -99,27 +102,16 @@
   
   
   /* 01 - HOME */
-  .bg {
-    width: 100%;
-    min-height: 100vh;
-    padding: 0 5rem;
-    display: flex;
-    align-items: center;
-    color: #2f3133;
-  }
-  
   
   .picture-me-home img{
     position: absolute;
     right: 0;
     bottom: 0;
     width: 88rem;
-    margin-right: 10rem;
     opacity: 25%;
   }
   
   .intro-content {
-    padding-left: 10rem;
     font-size: 2rem;
   }
   
@@ -148,10 +140,12 @@
     display: flex;
     align-items: center;
   }
-  .sub-title hr {
+  
+  hr {
     color: #2f3133;
     width: 5rem;
-    height: .1rem;
+    height: .3rem;
+    background-color: #2f3133;
   }
   
   .sub-title p {
@@ -167,7 +161,7 @@
   transition: all 300ms ease-in-out;
   }
   
-  .gear{
+  .gear {
     position: absolute;
     bottom: -6rem;
     left: -8rem;
@@ -209,79 +203,94 @@
   
   
   /* 02 - ABOUT */
-  
-  .text-content h1 {
-    font-size: 5rem;
-    font-weight: lighter;
-  }
-  
-  .text-content {
-    font-size: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
   .about-content {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    padding-bottom: 0;
-    position: relative;
-    bottom: -10.5rem;
-    gap: var(--gap);
-  }
-  
-  #about .text-content h2 {
-    align-self: flex-start;
-    margin-bottom: 5rem;
-  }
-  
-  #about .text-content h2 span {
-    font-weight: lighter;
-  }
-  
-  #about .text-content p {
-    margin-bottom: 3rem;
-  }
-  
-  .redirect-icons img {
-   height: 15rem;
-  }
-  
-  .redirect-icons {
-    margin-top: 10rem;
     display: flex;
     justify-content: center;
-    gap: 10rem;
+    align-items: center;
+    margin: 0 auto;
+    gap: var(--gap);
   }
-  
-  .text-content a {
-    color: #000;
+
+  h2 {
+    padding-left: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
   }
-  
-  .text-content a.link-redirect:hover {
-    color: #3286ae;
-    font-weight: bold;
+
+  h3 {
+    font-size: 4rem;
+    margin-top: -1.2rem;
   }
-  
-  .redirect-icons a span {
-    font-weight: bold;
+
+  .text-content p{
+    padding-top: 5rem;
+    font-size: 2rem;
+    max-width: 100rem;
   }
-  
-  .redirect-icons-align {
+
+  .text-content p.space-about-small{
+    padding-top: 2rem;
+  }
+
+  .svg-redirect {
+    width: 7rem;
+  }
+
+  .redirect-pages-content a:hover .gear-habilites {
+    animation: rotating 3s linear infinite;
+  }
+
+
+  .redirect-pages-content a {
+    color: #2f3133;
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  
-  .redirect-icons-align:hover {
-      scale: 1.05;
-      cursor: pointer;
-      transition: all 300ms ease-in-out;
-    }
-  
-  .redirect-icons-align a {
-    max-width: 20rem;
-    padding: 1rem;
+
+  .redirect-pages-content a:hover {
+    color: #48cae4;
+    font-weight: bold;
+    transition: all 300ms ease-in-out;
   }
+
+  .redirect-pages-content a:hover .svg-redirect svg {
+    fill: #48cae4;
+    transition: all 300ms ease-in-out;
+  }
+
+  .redirect-pages {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: var(--gap);
+    padding-top: 4rem;
+  }
+
+  .redirect-pages-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .space-description-redirect {
+    padding-left: 1rem;
+  }
+
+  .space-description-redirect span{
+    font-weight: bold;
+  }
+
+  /* TESTE IMG GAMBIARRA */
+  .about-picture {
+    max-width: 70rem;
+  }
+
+  .about-picture img {
+    width: 100%;
+  }
+  /* FIM GAMBIARRA*/
+
   
   /* 03 - SKILLS */
   .ball-effect {
@@ -289,6 +298,13 @@
     display: flex;
     flex-direction: row;
   }
+
+  /* .text-content {
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
   
   .ball {
     margin: 1rem;
