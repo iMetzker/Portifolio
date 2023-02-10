@@ -226,6 +226,7 @@
     padding-top: 5rem;
     font-size: 2rem;
     max-width: 100rem;
+    text-align: justify;
   }
 
   .text-content p.space-about-small{
@@ -293,140 +294,7 @@
 
   
   /* 03 - SKILLS */
-  .ball-effect {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: row;
-  }
-
-  /* .text-content {
-    font-size: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } */
   
-  .ball {
-    margin: 1rem;
-    background-color: #000;
-    width: 1.3rem;
-    height: 1.3rem;
-    border-radius: 50%;
-    transition: all 300ms ease-in-out;
-  }
-  
-  .bg-gray {
-    background-color: #e5e5e5;
-  }
-  
-  .skills-icons {
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap);
-    position: absolute;
-    right: 5rem;
-  }
-  
-  .skills-icons img {
-    width: 7rem;
-    height: 7rem;
-    padding: 1rem;
-  }
-  
-  .skills-content h2 {
-    padding: 6rem 0;
-  }
-  
-  .skills-content .text-content {
-    max-width: 70rem;
-    position: absolute;
-  
-    background-color: var(--white-color);
-    border-radius: 3rem;
-    padding: 5rem;
-    padding-top: 13rem;
-    left: 9rem;
-  }
-  
-  .details-skills-text {
-    background-color: #2f3133;
-    width: 100%;
-    height: 10rem;
-  
-    position: absolute;
-    top: 0;
-    border-radius: 3rem 3rem 0 0;
-  
-    display: flex;
-    align-items: center;
-    justify-content: right;
-  }
-  
-  .text-balls {
-    background-color: var(--white-color);
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-  }
-  
-  .details-skills-text-balls {
-    display: flex;
-    padding: 0 3rem;
-    gap: 3rem;
-  }
-  
-  .skills-picture {
-    position: absolute;
-    bottom: -198rem;
-    left: 40rem;
-  }
-  
-  .skills-picture img {
-    width: 90%;
-  }
-  
-  .skills-icons-box {
-    width: 10rem;
-    height: 10rem;
-    background-color: #000;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  
-    border-radius: 1rem;
-  }
-  
-  .bg-js:hover {
-    background-color: #f2bf26;
-    cursor: pointer;
-    transition: all 300ms ease-in-out;
-  }
-  
-  .bg-css:hover {
-    background-color: #0c73b8;
-    cursor: pointer;
-    transition: all 300ms ease-in-out;
-  }
-  
-  .bg-html:hover {
-    background-color: #e65127;
-    cursor: pointer;
-    transition: all 300ms ease-in-out;
-  }
-  
-  .bg-react:hover {
-    background-color: #48cae4;
-    cursor: pointer;
-    transition: all 300ms ease-in-out;
-  }
-  
-  .skills-icons-box p {
-    font-size: 1rem;
-    font-weight: bold;
-    color: var(--white-color);
-  }
   
   /* 04 - PROJECTS */
   
