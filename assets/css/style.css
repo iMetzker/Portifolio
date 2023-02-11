@@ -32,7 +32,22 @@
     display: flex;
     align-items: center;
   }
-  
+
+  ::-webkit-scrollbar {
+    height: .8rem;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: .2rem;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #69cbdf;
+    border-radius: 25px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #48cae4;
+  }
+
   /* MENU */
   .menu {
     position: fixed;
@@ -296,7 +311,7 @@
   }
 
   .cv a:hover {
-    background-image: linear-gradient(to right, rgb(255, 170, 186), #ff8fa3, #ff708a);
+    background-image: linear-gradient(to right, #ff708a, #ff8fa3, rgb(255, 170, 186));
     transition: all 300ms ease-in-out;
   }
 
@@ -366,19 +381,127 @@
     overflow: hidden;
   }
 
-  .card:hover .effect {
+  .card:hover .effect, .projects-content:hover .content-description {
     transform: translateY(0);
     opacity: 1;
   }
   
   /* 04 - PROJECTS */
+
+  .projects-sub {
+    padding-bottom: 5rem;
+  }
+
+  .slide-container {
+    margin: 0 auto;
+    height: 45rem;
+    width: 70rem;
+    overflow: hidden;
+    border-radius: 3rem;
+    box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, .5);
+  }
+
+  .slide-content {
+    width: 40rem;
+    height: 45rem;
+    display: flex;
+  }
+
+  .slide-content input {
+    display: none;
+  }
+  .projects-content img {
+    width: 70rem;
+  }
   
+  .projects-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative; 
+  }
+
+  .content-description {
+    transition: .5s;
+    position: absolute;
+    transform: translateY(5rem);
+    transition: .5s;
+    opacity: 0;
+    bottom: 0;
+    padding: 2rem;
+    color: #2f3133;
+    background-color: #ebebeb;
+    width: 70rem;
+    border-radius: 3rem;
+    box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, .5);
+  }
+
+  .manual-navigation {
+    position: absolute;
+    width: 70rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: var(--gap)
+  }
+
+  .manual-btn {
+    border: .2rem solid #47bbea;
+    padding: .5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: .5s;
+  }
+
+  .manual-btn:hover{
+    background-color: #47bbea;
+  }
+
+  .content-description p {
+    text-align: justify;
+  }
+
+  .tech-icon {
+    display: flex;
+    gap: .1rem;
+    position: absolute;
+    margin-top: 1rem;
+  }
+
+  .content-description h4 {
+    padding-bottom: 1rem;
+    font-size: 3rem;
+  }
+
+  .projects-redirect {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #slide-one:checked ~ .on{
+    margin-left: 0;
+  }
+
+  #slide-two:checked ~ .on{
+    margin-left: -175%;
+  }
+
+  #slide-three:checked ~ .on{
+    margin-left: -350%
+  }
+
+  #slide-four:checked ~ .on{
+    margin-left: -525%
+  }
   
   
   footer {
     text-align: center;
     font-size: 1.6rem;
-    background-color: black;
+    background-color: #2f3133;
   
     color: #e5e5e5;
     padding: 5rem;
