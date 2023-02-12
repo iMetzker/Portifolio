@@ -344,7 +344,7 @@
     font-weight: bold;
     text-transform: uppercase;
     transition: .5s;
-    color: #e5e5e5;
+    color: #fff;
     position: absolute;
     transform: translateY(5rem);
     transition: .5s;
@@ -356,14 +356,14 @@
     font-weight: bold;
     text-transform: uppercase;
     transition: .5s;
-    color: #e5e5e5;
+    color: #fff;
     position: absolute;
     opacity: 20%;
   }
 
   .card {
     position: relative;
-    width: 35rem;
+    width: 40rem;
     height: 25rem;
     background-color: #2f3133;
     display: flex;
@@ -418,14 +418,125 @@
     background-color: #47bbea;
   }
 
+  .skill-loading {
+    animation: efeitoPiscar 1s infinite;
+  }
+
   /* 04 - PROJECTS */
-
   
-   
+   .projects-card-content .image {
+    height: 25rem;
+    width: 45rem;
+    border-radius: 3rem;
+    padding: .5rem;
+    background-color: #2f3133;
+   }
 
+   .projects-card-content .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3rem;
+   }
 
+   .projects-card {
+    border-radius: 2rem;
+    background-color: #e5e5e5;
+    position: relative;
+    margin: 2rem 0;
+    width: 50rem;
+    box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, .5);
+   }
 
-  
+   .projects-card::before {
+    content: '';
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background-color: #2f3133;
+    border-radius: 2rem 2rem 0 0;
+   }
+
+   .projects-card .projects-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    position: relative;
+    z-index: 1;
+   }
+
+   .projects-card .icon-tech {
+    position: absolute;
+    right: 1rem;
+    top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+   }
+
+   .icon-tech .tech-project {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #fff;
+    width: 4rem;
+    padding: .6rem;
+    border-radius: 1rem;
+    color: #2f3133;
+    text-align: center;
+   }
+
+   .projects-card .name-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .projects-card h4 {
+    font-size: 3rem;
+    padding: 2rem;
+   }
+
+   .projects-card p {
+    text-align: justify;
+   }
+
+   .projects-card .redirect-project{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+   }
+
+   .redirect-project a {
+    color: #e5e5e5;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    background-color: #2f3133;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+   }
+
+   .redirect-project a:hover{
+    background-color: #47bbea;
+    transition: all 300ms ease-in-out;
+   }
+
+   .projects-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    gap:var(--gap);
+   }
 
   /* FOOTER */
   footer {
@@ -434,5 +545,6 @@
     background-color: #2f3133;
     color: #e5e5e5;
     padding: 5rem;
+    width: 100vw;
   }
   
