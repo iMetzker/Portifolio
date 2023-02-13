@@ -113,6 +113,60 @@
   .logo a {
     color: #47bbea;
     font-weight: bold;
+    padding: 0;
+  }
+
+  @media (max-width: 815px) {
+    .menu-content {
+      padding: 3rem 2rem;
+    }
+  
+    .menu-mobile-lines {
+      position: relative;
+      display: block;
+      cursor: pointer;
+    }
+  
+    .line {
+      width: 3rem;
+      height: 0.3rem;
+      background-color: #47bbea;
+      margin: 0.6rem 0;
+    }
+  
+    .menu-content nav {
+      height: 0;
+      position: absolute;
+      top: 5rem;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      background-color: #fff;
+      transition: 0.2s;
+      overflow: hidden;
+    }
+  
+  
+    .menu-content nav ul {
+      display: block;
+      width: fit-content;
+      margin: 8rem auto 0 auto;
+      text-align: center;
+      transition: 0.5s;
+      opacity: 0;
+    }
+  
+    .menu-content nav ul li a {
+      margin-bottom: 1rem;
+    }
+  
+    .nav-bar.active {
+      height: 45rem;
+    }
+  
+    .nav-bar.active ul {
+      opacity: 1;
+    }
   }
   
   
@@ -474,6 +528,7 @@
     flex-direction: column;
     align-items: end;
     gap: 1rem;
+    cursor: pointer;
    }
 
    .icon-tech .tech-project {
@@ -501,6 +556,20 @@
 
    .projects-card p {
     text-align: justify;
+   }
+
+   .tech-project:hover {
+    transform: scale(1.1);
+    transition: all 300ms ease-in-out;
+   }
+
+   .projects-card:hover {
+    transform: scale(1.03);
+    transition: all 300ms ease-in-out;
+   }
+
+   .cursor-move {
+    cursor: pointer;
    }
 
    .projects-card .redirect-project{
@@ -536,7 +605,32 @@
     align-items: center;
     flex-flow: wrap;
     gap:var(--gap);
+   } 
+   
+   #projects {
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 10rem;
+    color: #2f3133;
+    position: relative;
    }
+
+   #skills {
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 10rem;
+    color: #2f3133;
+
+   }
+
+   .gear-end {
+    position: absolute;
+    bottom: -8rem;
+    left: -8rem;
+    width: 30rem;
+    animation: rotating 5s linear infinite;
+    z-index: -1;
+  }
 
   /* FOOTER */
   footer {
@@ -545,6 +639,14 @@
     background-color: #2f3133;
     color: #e5e5e5;
     padding: 5rem;
-    width: 100vw;
+    z-index: 10;
+  }
+
+  footer .redirect-contact {
+    padding: 1rem 0;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   

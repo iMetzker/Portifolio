@@ -1,0 +1,88 @@
+  .picture-me-home img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 88rem;
+    opacity: 25%;
+  }
+  
+  .intro-content {
+    font-size: 2rem;
+  }
+  
+  .intro-content h1 {
+    font-size: 12rem;
+    padding: 1rem 0;
+  }
+  
+  .intro-content h1::after{
+      content: '|';
+      margin-left: .5rem;
+      opacity: 1;
+      animation: efeitoPiscar 1s infinite;
+  }
+  
+  @keyframes efeitoPiscar {
+      0%, 100% {
+          opacity: 1;
+      }    
+      50% {
+          opacity: 0;
+      }
+  }
+
+  .redirect-contact {
+    padding: 3rem 0 8rem 0 ;
+  }
+  
+  .redirect-contact a:hover svg{
+  fill: #48cae4;
+  transition: all 300ms ease-in-out;
+  }
+  
+  .gear {
+    position: absolute;
+    bottom: -6rem;
+    left: -8rem;
+    width: 30rem;
+    animation: rotating 5s linear infinite;
+  }
+  
+  .gear-child {
+    position: absolute;
+    bottom: 10rem;
+    left: 20rem;
+    width: 20rem;
+  }
+  
+  .gear-child svg{
+    opacity: 50%;
+  }
+  
+  .gear-little {
+    width: 10rem;
+    bottom: -1rem;
+    left: 22rem;
+  }
+  
+  .gear-little svg{
+    opacity: 50%;
+  }
+  
+  .gear:hover {
+    animation: rotating 1s infinite;
+  }
+  
+  
+  @keyframes rotating {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+
+  @media (max-width: 690px){
+    .intro-content h1 {
+        font-size: 5rem;
+      }
+  }
+  
