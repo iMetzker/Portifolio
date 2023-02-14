@@ -21,6 +21,10 @@
       opacity: 1;
       animation: efeitoPiscar 1s infinite;
   }
+
+  .intro-content p {
+    padding-left: 1rem;
+  }
   
   @keyframes efeitoPiscar {
       0%, 100% {

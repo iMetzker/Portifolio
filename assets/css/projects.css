@@ -1,0 +1,131 @@
+.projects-card-content .image {
+    height: 30rem;
+    width: 45rem;
+    border-radius: 2rem;
+    padding: .2rem;
+    background-color: #2f3133;
+   }
+
+   .projects-card-content .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+    border: .4rem solid #e5e5e5;
+   }
+
+   .projects-card {
+    border-radius: 2rem;
+    position: relative;
+    margin: 2rem 0;
+    width: 50rem;
+    box-shadow: 1rem 1rem 4rem rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-top: .1rem solid rgba(255, 255, 255, 0.5);
+    border-left: .1rem solid rgba(255, 255, 255, 0.5);
+   }
+
+   .projects-card .projects-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    position: relative;
+    z-index: 1;
+   }
+
+   .projects-card .icon-tech {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+   }
+
+   .icon-tech .tech-project {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #2f3133;
+    width: 5rem;
+    padding: .6rem;
+    border-radius: 1rem;
+    color: #fff;
+    text-align: center;
+   }
+
+   .projects-card .name-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .projects-card h4 {
+    font-size: 3rem;
+    padding: 2rem;
+   }
+
+   .cursor-move {
+    cursor: pointer;
+   }
+
+   .redirect-project{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2rem;
+   }
+
+   .redirect-project a {
+    color: #e5e5e5;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    background-color: #2f3133;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+   }
+
+   .redirect-project a:hover{
+    background-color: #47bbea;
+    transition: all 300ms ease-in-out;
+   }
+
+   .projects-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:var(--gap);
+    flex-flow: wrap;
+   }
+
+   .gear-end {
+    position: absolute;
+    top: -5rem;
+    right: 10rem;
+    width: 30rem;
+    animation: rotating 5s linear infinite;
+    z-index: -1;
+  }
+
+   /* .effect {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+    color: #fff;
+    position: absolute;
+    transform: translateY(10rem);
+    transition: .5s;
+    opacity: 0;
+  } 
+
+   .projects-card:hover .effect{
+    transform: translateY(0);
+    opacity: 1;
+  }  */
