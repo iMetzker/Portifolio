@@ -51,21 +51,3 @@
   .gear-child-skills svg{
     opacity: 50%;
   }
-
-  
-  /* .effect {
-    font-size: 3rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: .5s;
-    color: #fff;
-    position: absolute;
-    transform: translateY(10rem);
-    transition: .5s;
-    opacity: 0;
-  } 
-
-   .card:hover .effect{
-    transform: translateY(0);
-    opacity: 1;
-  } */

@@ -1,4 +1,3 @@
-//TITLE
 const textIntro = document.querySelector(".intro-content h1");
 
 function typeWriter(el) {
@@ -11,6 +10,5 @@ function typeWriter(el) {
     }, 75 * i);
   });
 }
-
 typeWriter(textIntro);
 

@@ -1,0 +1,132 @@
+
+.menu {
+    position: fixed;
+    z-index: 2;
+    height: 7%;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background-color: #fff;
+  }
+  
+  .menu-content {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 5rem;
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu a {
+    color: #2f3133;
+    display: block;
+    padding: 2rem;
+    position: relative;
+  }
+  
+  .blink-arrow:hover svg {
+    width: 2rem;
+    height: 2rem;
+  }
+  .blink-arrow:hover svg path {
+  fill: #ff8fa3;
+  }
+  
+  .menu svg {
+    position: absolute;
+    animation: efeitoPiscar 1s infinite;
+    top: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  li.active svg {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .menu li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  
+  .logo a {
+    color: #47bbea;
+    font-weight: bold;
+    padding: 0;
+  }
+
+  @media (max-width: 815px) {
+    .menu-content {
+      padding: 3rem 2rem;
+    }
+  
+    .menu-mobile-lines {
+      position: relative;
+      display: block;
+      cursor: pointer;
+    }
+  
+    .line {
+      width: 3rem;
+      height: 0.3rem;
+      background-color: #47bbea;
+      margin: 0.6rem 0;
+    }
+  
+    .menu-content nav {
+      height: 0;
+      position: absolute;
+      top: 5rem;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      background-color: #fff;
+      transition: 0.2s;
+      overflow: hidden;
+    }
+  
+  
+    .menu-content nav ul {
+      display: block;
+      width: fit-content;
+      margin: 8rem auto 0 auto;
+      text-align: center;
+      transition: 0.5s;
+      opacity: 0;
+    }
+  
+    .menu-content nav ul li a {
+      margin-bottom: 1rem;
+    }
+  
+    .nav-bar.active {
+      height: 45rem;
+    }
+  
+    .nav-bar.active ul {
+      opacity: 1;
+    }
+
+    .section-page, #skills, #projects {
+      padding: 4rem;
+    }
+
+    .align-left-tittle{
+      left: 3rem;
+    }
+
+    h3{
+      font-size: 3rem;
+    }
+  }

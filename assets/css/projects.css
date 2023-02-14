@@ -15,10 +15,10 @@
    }
 
    .projects-card {
-    border-radius: 2rem;
+    width: 50rem;
     position: relative;
     margin: 2rem 0;
-    width: 50rem;
+    border-radius: 2rem;
     box-shadow: 1rem 1rem 4rem rgba(0, 0, 0, 0.5);
     background-color: rgba(255, 255, 255, 0.1);
     border-top: .1rem solid rgba(255, 255, 255, 0.5);
@@ -73,7 +73,6 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-top: 2rem;
    }
 
    .redirect-project a {
@@ -106,26 +105,56 @@
 
    .gear-end {
     position: absolute;
-    top: -5rem;
-    right: 10rem;
+    bottom: -6rem;
+    left: -8rem;
     width: 30rem;
     animation: rotating 5s linear infinite;
     z-index: -1;
   }
 
-   /* .effect {
-    font-size: 3rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: .5s;
-    color: #fff;
-    position: absolute;
-    transform: translateY(10rem);
-    transition: .5s;
-    opacity: 0;
-  } 
+  .effect-loading {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 0.5rem solid #e5e5e5;
+    border-top-color: #47bbea;
+    animation: rotating 1s infinite;
+  }
 
-   .projects-card:hover .effect{
-    transform: translateY(0);
-    opacity: 1;
-  }  */
+  .loading-theme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .block-theme {
+    cursor: no-drop;
+  }
+
+  .redirect-project.block-theme a:hover{
+    background-color: #2f3133;
+  }
+
+  @media (max-width: 610px) {
+
+    .projects-card-content .image {
+        width: 100%;
+       }
+    
+       .projects-card {
+        width: 100%;
+       }
+
+       .redirect-project{
+        flex-flow: wrap;
+        gap: 1rem;
+       }
+       
+  }
+
+  @media (max-width: 420px) {
+    .projects-card h4 {
+        font-size: 2rem;
+        padding-top: 2rem;
+       }
+  }

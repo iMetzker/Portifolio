@@ -89,4 +89,33 @@
         font-size: 5rem;
       }
   }
+
+  @media (max-width: 500px) {
+    
+  .gear {
+    bottom: -2rem;
+    left: -8rem;
+    width: 20rem;
+  }
+  
+  .gear-child {
+    bottom: 6rem;
+    left: 13rem;
+    width: 10rem;
+  }
+
+  .gear-little {
+    width: 5rem;
+    bottom: 1rem;
+    left: 12rem;
+  }
+  
+  .gear-little svg{
+    opacity: 50%;
+  }
+
+  .picture-me-home img{
+    width: 68rem;
+  }
+  }
   
