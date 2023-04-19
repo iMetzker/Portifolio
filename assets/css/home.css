@@ -73,10 +73,6 @@
     opacity: 50%;
   }
   
-  .gear:hover {
-    animation: rotating 1s infinite;
-  }
-  
   
   @keyframes rotating {
     to {

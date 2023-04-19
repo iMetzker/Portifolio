@@ -17,36 +17,11 @@
     padding-top: 2rem;
   }
 
-  .svg-redirect {
-    width: 7rem;
-  }
-
-  .redirect-pages-content a:hover .gear-habilites {
-    animation: rotating 3s linear infinite;
-  }
-
-  .redirect-pages-content a {
-    color: #2f3133;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .redirect-pages-content a:hover {
-    color: #48cae4;
-    font-weight: bold;
-    transition: all 300ms ease-in-out;
-  }
-
-  .redirect-pages-content a:hover .svg-redirect svg {
-    fill: #48cae4;
-    transition: all 300ms ease-in-out;
-  }
-
   .redirect-pages {
     display: flex;
     justify-content: start;
     align-items: center;
+    flex-direction: column;
     gap: var(--gap);
   }
 
@@ -64,35 +39,8 @@
     font-weight: bold;
   }
 
-  .cv {
-    padding: 4rem 0;
-    display: flex;
-    justify-content: start;
-  }
-
-  .cv a {
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.8rem;
-    padding: 1.5rem 3rem;
-    border: none;
-    border-radius: 3rem;
-    background-image: linear-gradient(to right, #73def3, #48cae4, #22bbda);
-    cursor: pointer;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .cv a:hover {
-    background-image: linear-gradient(to right, #ff708a, #ff8fa3, rgb(255, 170, 186));
-    transition: all 300ms ease-in-out;
-  }
-
   .about-picture {
-    max-width: 70rem;
+    max-width: 50rem;
   }
 
   .about-picture img {
