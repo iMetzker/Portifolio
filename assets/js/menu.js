@@ -6,7 +6,7 @@ function menuMobile() {
     nav.classList.toggle("active");
   }
 
-// ARROW
+  // ARROW
 function activeBlink () {
   blinkSelection.forEach((element) => {
     element.classList.remove("active");

@@ -11,4 +11,3 @@ function typeWriter(el) {
   });
 }
 typeWriter(textIntro);
-

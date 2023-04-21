@@ -47,6 +47,11 @@
     width: 100%;
   }
 
+  .redirect-pages h5 {
+    padding-top: 1.8rem;
+    font-size: 2rem;
+  }
+
   @media (max-width: 1134px) {
     .about-content {
         flex-direction: column;
