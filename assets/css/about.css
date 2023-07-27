@@ -48,7 +48,7 @@
   }
 
   .redirect-pages h5 {
-    padding-top: 1.8rem;
+    padding-top: 3rem;
     font-size: 2rem;
   }
 
@@ -63,9 +63,6 @@
   }
 
   @media (max-width:500px) {
-    .redirect-pages {
-      display: block;
-    }
 
     .redirect-pages-content {
       padding: 1rem;

@@ -20,18 +20,14 @@
 ![](https://img.shields.io/badge/javascript-yellow?style=for-the-badge&logo=javascript&logoColor=white)
 ![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-## ⚡ Sobre
-Projeto para apresentação pessoal e profissional.
 
-## 🛸 Tecnologias Utilizadas
+
+## ⚡ About
+
+Project for personal and professional presentation.
+
+## 🛸 Technologies Used
 
 - HTML 5
 - CSS 3
 - JAVA SCRIPT
-
-## 💻 Demonstração
-
-<img src="./assets/img/preview.png">
-
-🔗 Visite : https://portifolio-ivnymetzker.netlify.app/#contact
-
